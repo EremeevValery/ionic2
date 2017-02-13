@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Ionic</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="card-background-page">
+
+  <ion-card>
+    <img src="assets/img/omsk.jpg"/>
+    <div class="card-title">Omsk</div>
+  </ion-card>
+  <p>Текущая температура(C): {{current_temperature}}</p>
+  <button ion-button (tap)="getClick()">Get now tempreture</button>
+
+</ion-content>
